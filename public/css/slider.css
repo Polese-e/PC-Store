@@ -1,3 +1,15 @@
-#mainSlider {
-    margin-top: 117px;
+#mainSlider > ol > button {
+    width: 9px;
+    height: 9px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+#mainSlider > ol > button.active {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: white;
+    border: 0;
 }

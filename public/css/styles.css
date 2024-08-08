@@ -1,35 +1,37 @@
 /* General */
 * {
-    font-family: 'Roboto';
-  }
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-  body {
+body {
     margin-top: 115px;
     min-height: 100vh;
     padding-bottom: 100px;
     position: relative;
     color: white;
-  }
+}
 
-  .row {
+.row {
     margin: 0;
-  }
+}
 
-  .container-fluid {
+.container-fluid {
     padding: 0;
-  }
+}
 
-  .btn-primary {
+.btn-primary {
     background-color: #F2A340;
     border: 2px solid #C28008;
-  }
+}
 
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: #C28008;
     border-color: #C28008;
-  }
+}
 
-  .msg {
+.msg {
     background-color: #d4edda;
     color: #155724;
     border: 1px solid #c3e6cb;
@@ -37,144 +39,148 @@
     margin-bottom: 0;
     text-align: center;
     padding: 10px;
-  }
-  /* Events list */
-  #events-container {
+}
+
+/* Events list */
+#events-container {
     padding: 50px;
-  }
+}
 
-  #events-container h2 {
+#events-container h2 {
     margin-bottom: 10px;
-  }
+}
 
-  #events-container .subtitle {
+#events-container .subtitle {
     color: #757575;
     margin-bottom: 30px;
-  }
+}
 
-  .card .card-date {
+.card .card-date {
     font-size: 12px;
     color: #CCC;
     float: right;
     padding-top: 5px;
-  }
+}
 
-  .card .card-title {
+.card .card-title {
     color: #212121;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
-  }
+}
 
-  .card-participants {
+.card-participants {
     font-size: 14px;
     color: #757575;
-  }
+}
 
-  /* Create Page */
-  #event-create-container h1 {
+/* Create Page */
+#event-create-container h1 {
     padding-bottom: 7px;
-  }
+}
 
-  #event-create-container label {
+#event-create-container label {
     padding-bottom: 2px;
-  }
+}
 
-  #event-create-container .form-group {
+#event-create-container .form-group {
     padding-bottom: 13px;
-  }
+}
 
-  #event-create-container {
+#event-create-container {
     padding: 30px;
-  }
+}
 
-  #event-create-container label {
+#event-create-container label {
     font-weight: bold;
-  }
+}
 
-  #event-create-container input,
-  #event-create-container select,
-  #event-create-container textarea {
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea {
     font-size: 15px;
-  }
+}
 
-  /* Event Page */
-  #image-container img {
+/* Event Page */
+#image-container img {
     border-radius: 10px;
     width: 600px;
-  }
-  #image-container,
-  #info-container {
-    margin-top: 80px;
-  }
+}
 
-  #info-container h1 {
+#image-container,
+#info-container {
+    margin-top: 80px;
+}
+
+#info-container h1 {
     font-size: 36px;
     font-weight: 900;
-  }
-  #info-container p{
+}
+
+#info-container p {
     margin: 10px 0px;
     font-size: 14px;
     display: flex;
-  }
+}
 
-  #info-container h1 {
+#info-container h1 {
     margin-top: 10px;
     margin-bottom: 15px;
-  }
+}
 
-  #description-container h3 {
+#description-container h3 {
     font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 5px;
-  }
+}
 
-  #info-container ion-icon {
+#info-container ion-icon {
     font-size: 20px;
     color: #F2A340;
     margin-right: 5px;
-  }
-  #info-container #event-submit {
-    margin: 20px 0px;
-  }
+}
 
-  #items-list {
+#info-container #event-submit {
+    margin: 20px 0px;
+}
+
+#items-list {
     list-style: none;
     padding-left: 0;
-  }
+}
 
-  #items-list li {
+#items-list li {
     display: flex;
-  }
+}
 
-  .dashboard-title-container {
-    margin-top:30px;
+.dashboard-title-container {
+    margin-top: 30px;
     margin-bottom: 30px;
-  }
+}
 
-  .dashboard-events-container form {
+.dashboard-events-container form {
     display: inline-block;
-  }
+}
 
-  /* Edit Page */
+/* Edit Page */
 
-  .preview-img {
+.preview-img {
     width: 100px;
     margin-left: 80px;
-  }
+}
 
-  .already-joined-msg {
+.already-joined-msg {
     margin: 15px 0;
     color: #004085;
     background-color: #cce5ff;
     border: 1px solid #b8daff;
     padding: 10px;
     width: 275px;
-  }
+}
 
-  /* Footer */
-  footer {
+/* Footer */
+footer {
     text-align: center;
     background-color: #232223;
     color: #FFF;
@@ -182,8 +188,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
+}
 
-  footer p {
+footer p {
     margin-bottom: 0;
-  }
+}
