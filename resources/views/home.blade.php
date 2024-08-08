@@ -2,16 +2,10 @@
 
 @section('title', 'Início')
 
-@include('partials.carousel')
-
 @section('content')
 
-    <div id="search-container" class="col-md-12">
-        <h1>Buscar um evento</h1>
-        <form action="/" method="GET">
-            <input type="text" id="search" name="search" class="form-control" placeholder="Procurar">
-        </form>
-    </div>
+@include('partials.carousel')
+
     <div id="events-container" class="col-10 mx-auto">
         <div id="title-events" class="m-2">
             @if ($search)

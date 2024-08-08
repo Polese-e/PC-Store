@@ -1,20 +1,66 @@
-.navbar {
-    height: 115px;
+header {
+    height: 117;
+    background-color: #232223;
+    color: white;
 }
 
-#navbar {
-    padding-left: 50px;
-    padding-right: 50px;
+.navbar .top-navbar {
+    width: 1410px;
+    height: 65px;
 }
 
-#navbar > a > img {
-    width: 70px;
+.navbar .top-navbar form {
+    width: 900px;
+    height: 48px;
 }
 
-#navbar > ul > li > a {
-    font-size: 18px;
+.navbar .top-navbar form input {
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    font-size: 15px;
+    height: 100%;
+}
+.navbar .top-navbar i {
+    color: white;
 }
 
-#navbar > ul > li > form > a {
-    font-size: 18px;
+.navbar .top-navbar .menu-auth {
+    width: 128px;
+    height: 42px;
+}
+
+.navbar .top-navbar .menu-auth p {
+    width: 85px;
+    height: 40px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.navbar .top-navbar .menu-auth p a {
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .top-navbar .menu-auth i {
+    font-size: 30px;
+}
+
+.navbar .top-navbar .header-site-menu-icons {
+    width: 100px;
+    height: 40px;
+}
+
+.navbar .top-navbar .header-site-menu-icons i {
+    font-size: 20px;;
+}
+
+.navbar .bottom-navbar {
+    height: 53px;
+}
+
+.navbar .bottom-navbar .nav-link {
+    color: white;
 }

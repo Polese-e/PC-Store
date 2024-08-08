@@ -8,6 +8,7 @@
     min-height: 100vh;
     padding-bottom: 100px;
     position: relative;
+    color: white;
   }
 
   .row {
@@ -37,48 +38,6 @@
     text-align: center;
     padding: 10px;
   }
-
-  /* navbar */
-  #navbar img {
-    width: 40px;
-  }
-
-  #navbar {
-    justify-content: space-between;
-    background-color: #FFF;
-    padding: 5px 20px;
-  }
-
-  #navbar a {
-    font-size: 14px;
-    color: #757575;
-  }
-
-  #navbar a:hover {
-    color: #F2A340;
-  }
-
-  /* Search Container */
-  #search-container {
-    background-image: url("../img/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    padding: 110px;
-    text-align: center;
-  }
-
-  #search-container h1 {
-    color: #F2A340;
-    margin-bottom: 30px;
-    font-weight: 900;
-  }
-
-  #search-container form {
-    width: 50%;
-    margin: 0 auto;
-  }
-
   /* Events list */
   #events-container {
     padding: 50px;
@@ -217,7 +176,7 @@
   /* Footer */
   footer {
     text-align: center;
-    background-color: #353E48;
+    background-color: #232223;
     color: #FFF;
     padding: 30px;
     position: absolute;
