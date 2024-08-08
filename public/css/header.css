@@ -10,7 +10,7 @@ header {
 }
 
 .navbar .top-navbar form {
-    width: 900px;
+    width: 930px;
     height: 48px;
 }
 
@@ -18,9 +18,11 @@ header {
     border-radius: 4px;
     border: 0;
     outline: 0;
-    padding: 10px;
-    font-size: 15px;
+    padding: 12px;
+    padding-right: 0PX;
+    font-size: 16px;
     height: 100%;
+    margin-right: 14px;
 }
 .navbar .top-navbar i {
     color: white;
@@ -39,9 +41,13 @@ header {
 }
 
 .navbar .top-navbar .menu-auth p a {
-    font-weight: 800;
     color: white;
     text-decoration: none;
+    transition: 1s ease;
+}
+
+.navbar .top-navbar .menu-auth p a:hover {
+    color: #fe5511;
 }
 
 .navbar .top-navbar .menu-auth i {
@@ -59,8 +65,35 @@ header {
 
 .navbar .bottom-navbar {
     height: 53px;
+    padding-bottom: 8px;
 }
 
 .navbar .bottom-navbar .nav-link {
+    color: white;
+}
+
+#navbarDropdownMenuLink::after {
+    display: none;
+}
+
+#navbarDropdownMenuLink > span {
+    background: #111;
+    padding-left: 10px;
+    padding-right: 11px;
+    border-radius: 4px;
+    width: 185px;
+    height: 35px;
+}
+
+#navbarDropdownMenuLink > span > i{
+    font-size: 24px;
+}
+
+#navbarDropdownMenuLink > #departamentContent:hover {
+    background-color: #fe5511;
+}
+
+.nav-item.dropdown.show #departamentContent {
+    background-color: #fe5511;
     color: white;
 }

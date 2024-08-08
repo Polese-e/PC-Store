@@ -8,16 +8,16 @@
     {{-- Fonts --}}
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     {{-- Bootstrap --}}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 </head>
 {{-- CSS da aplicação --}}
-<link rel="stylesheet" href="{{ asset('css\styles.css') }}">
-<link rel="stylesheet" href="{{ asset('css\header.css') }}">
-<link rel="stylesheet" href="{{ asset('css\cards.css') }}">
-<link rel="stylesheet" href="{{ asset('css\slider.css') }}">
+<link rel="stylesheet" href="css\styles.css">
+<link rel="stylesheet" href="css\header.css">
+<link rel="stylesheet" href="css\cards.css">
+<link rel="stylesheet" href="css\slider.css">
 {{-- JS da aplicação --}}
 <script src="js\app.js" defer></script>
 </head>
@@ -51,7 +51,7 @@
                             @guest
                                 <div class="nav-item menu-auth d-flex align-items-center justify-content-between">
                                     <i class="bi bi-person-circle"></i>
-                                    <p>Olá, <a href="/login">Entre</a> ou <a href="/register">Cadastre-se</a></p>
+                                    <p>Olá, <strong><a href="/login">Entre</a></strong> ou <strong><a href="/register">Cadastre-se</a></strong></p>
                                 </div>
                             @endguest
                             @auth
@@ -79,17 +79,27 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav d-flex align-items-center justify-content-between w-100">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            DEPARTAMENTOS
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span id="departamentContent" class="d-flex align-items-center justify-content-between">
+                                                <i class="bi bi-list"></i>
+                                                DEPARTAMENTOS
+                                            </span>
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">PC Gamer</a></li>
-                                            <li><a class="dropdown-item" href="#">Hardware</a></li>
-                                            <li><a class="dropdown-item" href="#">Notebooks</a></li>
-                                            <li><a class="dropdown-item" href="#">Monitores</a></li>
-                                            <li><a class="dropdown-item" href="#">Monte seu PC</a></li>
-                                        </ul>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Air Fryer</a>
+                                            <a class="dropdown-item" href="#">Promoções</a>
+                                            <a class="dropdown-item" href="#">Kit Upgrade</a>
+                                            <a class="dropdown-item" href="#">Cabos e Acessórios</a>
+                                            <a class="dropdown-item" href="#">Video Games</a>
+                                            <a class="dropdown-item" href="#">PC Gamer</a>
+                                            <a class="dropdown-item" href="#">Hardware</a>
+                                            <a class="dropdown-item" href="#">Periféricos</a>
+                                            <a class="dropdown-item" href="#">Gabinetes</a>
+                                            <a class="dropdown-item" href="#">Refrigeração</a>
+                                            <a class="dropdown-item" href="#">Monitor Gamer</a>
+                                            <a class="dropdown-item" href="#">Cadeira Gamer</a>
+                                            <a class="dropdown-item" href="#">Diversos</a>
+                                        </div>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">PROMOÇÕES</a>
