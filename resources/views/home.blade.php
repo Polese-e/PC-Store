@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Início')
+@section('title', 'Terabyteshop, a Preferida dos Gamers, Ofertas Incríveis Melhor Entrega')
 
 @section('content')
 

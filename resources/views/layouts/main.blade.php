@@ -41,7 +41,7 @@
                     </a>
 
                     <form id="searchForm" action="/" method="GET" class="m-0">
-                        <input class="w-100" type="text " name="search" placeholder="Pesquise o seu produto"
+                        <input id="searchInput" type="text " name="search" placeholder="Pesquise o seu produto"
                             aria-label="Search">
                         <a href="/" class="form-icons"
                             onclick="event.preventDefault(); document.getElementById('searchForm').submit();">
@@ -91,7 +91,7 @@
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    role="button" aria-haspopup="true" aria-expanded="false">
                                     <span id="departamentContent"
                                         class="d-flex align-items-center justify-content-between">
                                         <i class="bi bi-list"></i>
@@ -115,8 +115,8 @@
                                 </div>
                             </li>
                         </ul>
-                        <ul
-                            id="navbarBottomLinks" class="navbar-nav d-flex align-items-center justify-content-between w-100">
+                        <ul id="navbarBottomLinks"
+                            class="navbar-nav d-flex align-items-center justify-content-between w-100">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">PROMOÇÕES</a>
                             </li>

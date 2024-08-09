@@ -22,10 +22,9 @@ header {
     border-radius: 4px;
     border: 0;
     outline: 0;
-    padding: 12px;
-    padding-right: 10px;
-    /* Espaço para o ícone */
+    padding: 13px;
     font-size: 16px;
+    transition: background-color 0.6s ease;
 }
 
 .navbar .top-navbar form .form-icons i {
@@ -35,7 +34,7 @@ header {
     top: 17px;
     color: black;
     cursor: pointer;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.6s ease;
 }
 
 .navbar .top-navbar form i#searchIcon {
@@ -161,13 +160,26 @@ header {
     font-size: 24px;
 }
 
-#navbarDropdownMenuLink>#departamentContent:hover {
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover #departamentContent {
     background-color: #fe5511;
 }
 
-.nav-item.dropdown.show #departamentContent {
-    background-color: #fe5511;
-    color: white;
+.dropdown-menu {
+    display: none;
+    max-height: 1800px;
+    overflow-y:scroll;
+}
+
+.dropdown-men .dropdown-item {
+    height: 60px;
+}
+
+.dropdown-menu:active #departamentContent{
+    background-color:  #fe5511;
 }
 
 #navbarBottomLinks {
@@ -177,3 +189,4 @@ header {
 #navbarBottomLinks .nav-link:hover {
     color: #fe5511;
 }
+
