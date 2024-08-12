@@ -20,14 +20,14 @@
     </script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-</head>
-{{-- CSS da aplicação --}}
-<link rel="stylesheet" href="css\styles.css">
-<link rel="stylesheet" href="css\header.css">
-<link rel="stylesheet" href="css\cards.css">
-<link rel="stylesheet" href="css\slider.css">
-{{-- JS da aplicação --}}
-<script src="js\app.js" defer></script>
+    {{-- CSS da aplicação --}}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/top-navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bottom-navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/cards.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
+    {{-- JS da aplicação --}}
+    <script src="js\app.js" defer></script>
 </head>
 
 <body>
@@ -59,12 +59,12 @@
                         </div>
                     @endguest
                     @auth
-                        <div class="nav-item menu-auth d-flex align-items-center justify-content-between">
+                        <div class="nav-item menu-auth d-flex align-items-center" id="logoutMenu">
                             <i class="bi bi-person-circle"></i>
-                            <form action="/logout" method="post" id="logout-form">
+                            <form action="/logout" method="post" id="logoutForm" class="d-flex align-items-center">
                                 @csrf
                                 <a href="" class="nav-link"
-                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sair</a>
+                                    onclick="event.preventDefault(); document.getElementById('logoutForm').submit();"><strong>Logout</strong></a>
                             </form>
                         </div>
                     @endauth
@@ -81,7 +81,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bottom-navbar d-flex align-items-center">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,13 +111,18 @@
                                     <a class="dropdown-item" href="#">Monitor Gamer</a>
                                     <a class="dropdown-item" href="#">Cadeira Gamer</a>
                                     <a class="dropdown-item" href="#">Diversos</a>
+                                    <a class="dropdown-item" href="#">Mesa Gamer</a>
+                                    <a class="dropdown-item" href="#">Notebooks</a>
+                                    <a class="dropdown-item" href="#">Rede Internet</a>
+                                    <a class="dropdown-item" href="#">Copo Térmico</a>
+                                    <a class="dropdown-item" href="#">Smartwatch</a>
                                 </div>
                             </li>
                         </ul>
                         <ul id="navbarBottomLinks"
                             class="navbar-nav d-flex align-items-center justify-content-between w-100">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">PROMOÇÕES</a>
+                                <a class="nav-link" href="/events/create">PROMOÇÕES</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">PC GAMER</a>

@@ -1,0 +1,74 @@
+/* Bottom Navbar */
+.navbar .bottom-navbar {
+    height: 53px;
+    padding-bottom: 8px;
+}
+
+.navbar .bottom-navbar .nav-link {
+    color: white;
+}
+
+#navbarDropdownMenuLink::after {
+    display: none;
+}
+
+#navbarDropdownMenuLink>span {
+    background: #111;
+    padding-left: 10px;
+    padding-right: 11px;
+    border-radius: 4px;
+    width: 185px;
+    height: 35px;
+}
+
+#navbarDropdownMenuLink>span>i {
+    font-size: 24px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+logout-form
+.dropdown:hover #departamentContent {
+    background-color: #fe5511;
+}
+
+.dropdown-menu {
+    display: none;
+    font-size: 14px;
+    width: 200px;
+    max-height: 500px;
+    line-height: 30px;
+    overflow-y:scroll;
+}
+
+.dropdown-menu:active #departamentContent{
+    background-color:  #fe5511;
+}
+
+#navbarBottomLinks {
+    padding-left: 18px;
+}
+
+#navbarBottomLinks .nav-link:hover {
+    color: #fe5511;
+}
+
+#logoutMenu {
+    width: 100px;
+    padding-left: 5px;
+}
+
+#logoutForm {
+    left: 8px;
+}
+
+#logoutForm a {
+    transition: 1s ease;
+}
+
+#logoutForm a:hover {
+    color: #fe5511;
+}
+
