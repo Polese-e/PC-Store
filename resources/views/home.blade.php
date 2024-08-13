@@ -3,9 +3,36 @@
 @section('title', 'Terabyteshop, a Preferida dos Gamers, Ofertas Incríveis Melhor Entrega')
 
 @section('content')
-
-@include('partials.carousel')
-
+    @include('partials.carousel')
+    <div id="container-product-subcategory" class="w-100">
+        <div class="cards mx-auto d-flex justify-content-between p-0">
+            <div class="card card-custom border-0 d-flex justify-content-center">
+                <h4 class="pc-subcategory-name position-absolute text-center">CUSTOM</h4>
+                <div class="pc-subcategory-image">
+                    <img src="img/pc-subcategory/pc-t-custom.png" alt="pc-subcategory">
+                </div>
+            </div>
+            <div class="card card-custom border-0 d-flex justify-content-center">
+                <h3 class="pc-subcategory-name position-absolute text-center">GAMER</h3>
+                <div class="pc-subcategory-image">
+                    <img src="img/pc-subcategory/pc-t-gamer.png" alt="pc-subcategory">
+                </div>
+            </div>
+            <div class="card card-custom border-0 d-flex justify-content-center">
+                <h2 class="pc-subcategory-name position-absolute text-center">MOBA</h2>
+                <div class="pc-subcategory-image">
+                    <img src="img/pc-subcategory/pc-t-moba.png" alt="pc-subcategory">
+                </div>
+            </div>
+            <div class="card card-custom border-0 d-flex justify-content-center">
+                <h2 class="pc-subcategory-name position-absolute text-center">HOME</h2>
+                <div class="pc-subcategory-image">
+                    <img src="img/pc-subcategory/pc-t-home.png" alt="pc-subcategory">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <div id="events-container" class="col-10 mx-auto">
         <div id="title-events" class="m-2">
             @if ($search)
@@ -21,5 +48,4 @@
             <p>Não há eventos disponíveis</p>
         @endif
     </div>
-
 @endsection

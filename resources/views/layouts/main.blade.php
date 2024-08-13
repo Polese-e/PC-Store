@@ -26,12 +26,12 @@
     <link rel="stylesheet" href="{{ asset('css/bottom-navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/cards.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/product-subcategory.css') }}">
     {{-- JS da aplicação --}}
     <script src="js\app.js" defer></script>
 </head>
 
 <body>
-    <!-- Navbar -->
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg p-0">
             <div class="mx-auto">
