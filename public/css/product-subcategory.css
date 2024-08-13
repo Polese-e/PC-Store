@@ -14,6 +14,7 @@
     width: 334px;
     height: 100px;
     position: relative;
+    cursor: pointer;
 }
 
 #container-product-subcategory .cards .card .pc-subcategory-name {
@@ -44,6 +45,44 @@
 }
 
 #container-product-subcategory .cards .card .pc-subcategory-text {
-    width: 153px;
+    width: 158px;
     height: 41px;
+    position: absolute;
+    align-self: flex-end;
+    right: 9px;
+    top: 30px;
+}
+
+#container-product-subcategory .cards .card .pc-subcategory-text span:first-child {
+    font-weight: 600;
+    font-size: 30px;
+    height: 33px;
+}
+
+#container-product-subcategory .cards .card .pc-subcategory-text span:last-child {
+    color: #777;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#container-product-subcategory .cards .card:hover .pc-subcategory-text span:last-child {
+    color: #ff5800;
+}
+
+#container-product-subcategory .cards .card i {
+    color: #777;
+    position: absolute;
+    align-self: flex-end;
+    top: 10px;
+    right: 10px;
+    rotate: 45deg;
+    opacity: 0;
+    padding: 5px;
+    transition: .2s linear;
+}
+
+#container-product-subcategory .cards .card:hover i {
+    opacity: 1;
+    padding: 0;
+    transition: .2s linear;
 }
