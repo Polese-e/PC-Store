@@ -22,9 +22,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     {{-- CSS da aplicação --}}
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/top-navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bottom-navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/cards.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/navbar/top-navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/navbar/bottom-navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home-products-container.css') }}">
     <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
     <link rel="stylesheet" href="{{ asset('css/product-subcategory.css') }}">
     {{-- JS da aplicação --}}

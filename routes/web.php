@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\TimerController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
@@ -15,3 +16,4 @@ Route::get('/events/edit/{id}', [EventController::class,'edit'])->middleware('au
 Route::put('/events/update/{id}', [EventController::class,'update'])->middleware('auth');
 Route::post('/events/join/{id}', [EventController::class,'joinEvent'])->middleware('auth');
 Route::delete('/events/leave/{id}', [EventController::class,'leaveEvent'])->middleware('auth');
+Route::get('/timer', [TimerController::class, 'getTime']);

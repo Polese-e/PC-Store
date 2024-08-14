@@ -9,7 +9,7 @@
             <div class="card card-custom border-0 d-flex justify-content-center">
                 <h4 class="pc-subcategory-name position-absolute text-center">CUSTOM</h4>
                 <div class="pc-subcategory-image">
-                    <img src="img/pc-subcategory/pc-t-custom.png" alt="pc-subcategory">
+                    <img src="img/pc-subcategory/pc-t-custom.png" alt="pc-subcategory" class="mx-auto my-auto">
                 </div>
                 <div class="pc-subcategory-text row">
                     <span class="p-0">T-CUSTOM</span>
@@ -52,20 +52,8 @@
             </div>
         </div>
     </div>
-    </div>
-    <div id="events-container" class="col-10 mx-auto">
-        <div id="title-events" class="m-2">
-            @if ($search)
-                <h2>Procurando por: {{ $search }}</h2>
-            @else
-                <h2 class="mb-2"><strong>Lançamentos</strong></h2>
-            @endif
-        </div>
+
+    <div class="home-products-container mx-auto">
+        <h2 class="title-home-products-container mb-3">LANÇAMENTOS</h2>
         @include('partials.card')
-        @if (count($events) == 0 && $search)
-            <p>Não há eventos como o nome de: {{ $search }} | <a href="/">Voltar ao início</a></p>
-        @elseif (count($events) == 0)
-            <p>Não há eventos disponíveis</p>
-        @endif
     </div>
-@endsection
