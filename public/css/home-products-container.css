@@ -35,7 +35,8 @@
 
 .home-products-container #cards-container .card .promotion-time .promotion span:last-child {
     color: white;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .home-products-container #cards-container .card .promotion-time .time{
@@ -58,8 +59,8 @@
 .home-products-container #cards-container .card .promotion-time .time .text{
     font-size: 13px;
     font-weight: bold;
-    color: #ff5800; /* Cor laranja */
-    text-shadow: 0 0 20px #ff5800,0 0 20px #ff5800; /* Sombra de texto escura */
+    color: #ff5800;
+    text-shadow: 0 0 20px #ff5800,0 0 20px #ff5800;
 }
 
 .home-products-container #cards-container .card .promotion-time .time .timer {
@@ -74,7 +75,6 @@
     font-weight: 600;
     color: white;
 }
-
 
 .home-products-container #cards-container .card:hover .promotion-time .time .text {
     opacity: 0;
@@ -97,4 +97,8 @@
     height: 205px;
     margin-top: 14px;
     margin-bottom: 14px;
+}
+
+
+.home-products-container #cards-container .card .product-name {
 }
