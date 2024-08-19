@@ -1,0 +1,54 @@
+.carousel-products-category {
+    width: 1420px;
+}
+
+.carousel-products-category H2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.carousel-products-category .glider-track {
+    margin: 0px;
+    padding: 0px;
+    background: #ebebeb;
+}
+
+.glider-contain {
+    position: relative;
+    width: 100%;
+}
+
+.glider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.glider div {
+    min-width: 200px;
+    margin: 10px;
+    background: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button.glider-prev,
+button.glider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.glider-prev {
+    left: 10px;
+}
+
+button.glider-next {
+    right: 10px;
+}
