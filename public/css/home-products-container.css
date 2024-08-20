@@ -184,3 +184,7 @@
 .home-products-container #cards-container .card:hover .add-to-cart{
   display: block;
 }
+
+.no-discunt {
+    margin-top: 40px;
+}

@@ -58,7 +58,13 @@
 </div>
 
 <div class="carousel-products-category mx-auto">
-    <h2>DEPARTAMENTOS POPULARES</h2>
+    <h2 class="d-flex justify-content-between">
+        DEPARTAMENTOS POPULARES
+        <div class="dots glider-dots row" role="tablist">
+            <button class="glider-dot" data-index="0" aria-label="Page 1"></button>
+            <button class="glider-dot active" data-index="1" aria-label="Page 2"></button>
+        </div>
+    </h2>
     <div class="glider-contain m-0">
         <div class="glider">
             @foreach ($categorys as $category)

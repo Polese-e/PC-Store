@@ -28,7 +28,6 @@
     display: block;
 }
 
-logout-form
 .dropdown:hover #departamentContent {
     background-color: #fe5511;
 }
@@ -42,7 +41,7 @@ logout-form
     overflow-y:scroll;
 }
 
-.dropdown-menu:active #departamentContent{
+.dropdown-menu:active #navbarDropdownMenuLink{
     background-color:  #fe5511;
 }
 
@@ -61,6 +60,7 @@ logout-form
 
 #logoutForm {
     left: 8px;
+    margin: 0px;
 }
 
 #logoutForm a {

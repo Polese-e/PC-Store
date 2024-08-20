@@ -41,7 +41,8 @@ async function fetchTime() {
 }
 
 function iniciarTemporizador(duracao, elemento) {
-    let temporizador = duracao, dias, horas, minutos, segundos;
+    let temporizador = duracao,
+        dias, horas, minutos, segundos;
     const idIntervalo = setInterval(() => {
         dias = parseInt(temporizador / (60 * 60 * 24), 10);
         horas = parseInt((temporizador % (60 * 60 * 24)) / (60 * 60), 10);
@@ -65,18 +66,12 @@ fetchTime().then(tempoRestante => {
     console.log('Iniciando temporizador com:', tempoRestante);
     document.querySelectorAll('#timer').forEach(timerElement => {
         iniciarTemporizador(tempoRestante, timerElement);
-    });
+    })
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    new Glider(document.querySelector('.glider'), {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      draggable: true,
-      dots: '.dots',
-      arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-      }
-    });
-  });
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 9,
+    slidesToScroll: 6,
+    draggable: true,
+    dots: '.dots'
+});

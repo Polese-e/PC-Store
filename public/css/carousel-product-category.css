@@ -6,6 +6,7 @@
 .carousel-products-category H2 {
     font-size: 18px;
     font-weight: 600;
+    margin: 8px;
     margin-bottom: 20px;
 }
 
@@ -15,12 +16,8 @@
     background: #ebebeb;
 }
 
-.carousel-products-category .product-category p {
-    top: 20px;
-}
-
 .glider-track {
-    height: 200px;
+    height: 230px;
 }
 
 .glider-contain {
@@ -54,19 +51,20 @@
     height: 100%;
 }
 
+.glider-dots {
+    width: 52px;
+    margin: 0;
+}
+
+.glider-dots .glider-dot.active {
+    background-color: rgb(204, 70, 0);
+}
+
 .glider .product-category .category-name {
-    padding-top: 13px;
+    padding-top: 15px;
 }
 
 .glider .product-category .category-name p {
     font-weight: bold;
     font-size: 13px;
-}
-
-button.glider-prev {
-    left: 10px;
-}
-
-button.glider-next {
-    right: 10px;
 }

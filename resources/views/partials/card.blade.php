@@ -38,7 +38,7 @@
             </div>
         @else
             <div class="card col-lg-1-5">
-                <div class="card-image d-flex align-items-center justify-content-center">
+                <div class="card-image no-discunt d-flex align-items-center justify-content-center">
                     <img src="/img/products/{{ $product->image }}" alt="{{ $product->title }}">
                 </div>
                 <div class="product-name">
