@@ -38,6 +38,8 @@
 #container-product-subcategory .cards .card h4{
     top: 35px;
     right: 272px;
+    font-size: 100%;
+    white-space: nowrap;
 }
 
 #container-product-subcategory .cards .card .pc-subcategory-image {

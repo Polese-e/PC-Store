@@ -61,7 +61,6 @@ function iniciarTemporizador(duracao, elemento) {
         }
     }, 1000);
 }
-
 fetchTime().then(tempoRestante => {
     console.log('Iniciando temporizador com:', tempoRestante);
     document.querySelectorAll('#timer').forEach(timerElement => {
@@ -75,3 +74,4 @@ new Glider(document.querySelector('.glider'), {
     draggable: true,
     dots: '.dots'
 });
+

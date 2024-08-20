@@ -5,6 +5,24 @@
 @include('partials.carousel')
 <div id="container-product-subcategory" class="w-100">
     <div class="cards mx-auto d-flex justify-content-between p-0">
+        @foreach ($categoryHighlights as $categoryHighlight)
+            <div class="card card-custom border-0 d-flex justify-content-center">
+                <h4 class="pc-subcategory-name position-absolute text-center">{{ $categoryHighlight->label }}</h4>
+                <div class="pc-subcategory-image">
+                    <img src="img/pc-subcategory/{{ $categoryHighlight->image }}" alt="pc-subcategory"
+                        class="mx-auto my-auto">
+                </div>
+                <div class="pc-subcategory-text row">
+                    <span class="p-0">{{ $categoryHighlight->title }}</span>
+                    <span class="p-0">{{ $categoryHighlight->subtitle }}</span>
+                </div>
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+        @endforeach
+    </div>
+</div>
+<div id="container-product-subcategory" class="w-100">
+    <div class="cards mx-auto d-flex justify-content-between p-0">
         <div class="card card-custom border-0 d-flex justify-content-center">
             <h4 class="pc-subcategory-name position-absolute text-center">CUSTOM</h4>
             <div class="pc-subcategory-image">
