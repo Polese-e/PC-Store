@@ -59,50 +59,18 @@
 
 <div class="carousel-products-category mx-auto">
     <h2>DEPARTAMENTOS POPULARES</h2>
-    <button class="glider-prev">«</button>
-    <button class="glider-next">»</button>
     <div class="glider-contain m-0">
         <div class="glider">
-            <div class="product-category m-0">
-                <a href="">
-                    <img src="/img/product-category/kit-upgrade.webp" alt="kit-upgrade">
-                </a>
-                <p>Kit Upgrade</p>
-            </div>
-            <div class="product-category">
-                <a href="">
-                    <img src="/img/product-category/pc-gamer.webp" alt="">
-                </a>
-                <p>PC Gamer</p>
-            </div>
-            <div class="product-category">
-                <img src="" alt="">
-                <p>Hardware</p>
-            </div>
-            <div class="product-category">
-                <img src="" alt="">
-                <p>Periféricos</p>
-            </div>
-            <div class="product-category">
-                <img src="" alt="">
-                <p>Gabinetes</p>
-            </div>
-            <div class="product-category">
-                <img src="" alt="">
-                <p>Notebooks</p>
-            </div>
-            <div class="product-category">
-                <img src="" alt="">
-                <p>Refrigeração</p>
-            </div>
-            <div class="product-category">
-                <img src="" alt="">
-                <div>Monitor Gamer</div>
-            </div>
-            <div class="product-category">
-                <img src="" alt="">
-                <div>Cadeira Gamer</div>
-            </div>
+            @foreach ($categorys as $category)
+                <div class="product-category">
+                    <div class="category-image">
+                        <img src="/img/product-category/{{ $category->image }}" alt="kit-upgrade">
+                    </div>
+                    <div class="category-name">
+                        <p class="text-center">{{ $category->title }}</p>
+                    </div>
+                </div>
+            @endforeach
         </div>
     </div>
 </div>
