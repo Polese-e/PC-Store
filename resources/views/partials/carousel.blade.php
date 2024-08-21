@@ -1,18 +1,17 @@
 <div id="mainSlider" class="carousel slide p-0" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
-    </ol>
+    @if (count($banners) > 1)
+        <ol class="carousel-indicators">
+            @foreach ($banners as $index => $banner)
+                <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="{{ $index }}"
+                    class="{{ $index === 0 ? 'active' : '' }}"></button>
+            @endforeach
+        </ol>
+    @endif
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/slide1.jpg" class="d-block w-100" alt="slide 1">
-        </div>
-        <div class="carousel-item">
-            <img src="img/slide2.jpg" class="d-block w-100" alt="slide 2">
-        </div>
-        <div class="carousel-item">
-            <img src="img/slide3.jpg" class="d-block w-100" alt="slide 3">
-        </div>
+        @foreach ($banners as $index => $banner)
+            <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                <img src="{{ asset($banner->image) }}" class="d-block w-100" alt="slide {{ $index + 1 }}">
+            </div>
+        @endforeach
     </div>
 </div>
