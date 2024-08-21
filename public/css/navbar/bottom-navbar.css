@@ -45,6 +45,10 @@
     background-color:  #fe5511;
 }
 
+.dropdown-menu .dropdown-item:hover {
+    background-color: #fdeac8;
+}
+
 #navbarBottomLinks {
     padding-left: 18px;
 }

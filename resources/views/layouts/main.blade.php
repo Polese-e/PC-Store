@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="{{ asset('css/carousel-product-category.css') }}">
     {{-- JS da aplicação --}}
     <script src="js\app.js" defer></script>
+    <script src="js\scroll.js" defer></script>
+    <script src="js\timer.js" defer></script>
 </head>
 
 <body>
