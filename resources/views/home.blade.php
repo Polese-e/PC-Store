@@ -7,7 +7,7 @@
     <div class="cards mx-auto d-flex justify-content-between p-0">
         @foreach ($categoryHighlights as $categoryHighlight)
             <div class="card card-custom border-0 d-flex justify-content-center">
-                <h2 class="pc-subcategory-name position-absolute">{{ $categoryHighlight->label }}</h2>
+                <h2 class="pc-subcategory-name position-absolute text-center">{{ $categoryHighlight->label }}</h2>
                 <div class="pc-subcategory-image">
                     <img src="img/pc-subcategory/{{ $categoryHighlight->image }}" alt="pc-subcategory"
                         class="mx-auto my-auto">
