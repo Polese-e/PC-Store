@@ -37,7 +37,7 @@
     </h2>
     <div class="glider-contain m-0">
         <div class="glider">
-            @foreach ($categorys as $category)
+            @foreach ($categories as $category)
                 <div class="product-category">
                     <div class="category-image">
                         <img src="/img/product-category/{{ $category->image }}" alt="kit-upgrade">

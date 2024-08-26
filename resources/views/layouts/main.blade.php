@@ -30,10 +30,11 @@
     <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
     <link rel="stylesheet" href="{{ asset('css/product-subcategory.css') }}">
     <link rel="stylesheet" href="{{ asset('css/carousel-product-category.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/product.show/product-featured.css') }}">
     {{-- JS da aplicação --}}
-    <script src="js\app.js" defer></script>
-    <script src="js\scroll.js" defer></script>
-    <script src="js\timer.js" defer></script>
+    <script src="{{ asset('js\app.js') }}" defer></script>
+    <script src="{{ asset('js\scroll.js') }}" defer></script>
+    <script src="{{ asset('js\timer.js') }}" defer></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
             <div class="mx-auto">
                 <div class="top-navbar d-flex align-items-center justify-content-between pt-2 pb-1">
                     <a href="/">
-                        <img src="img/terabyte.svg" alt="Terabyte" width="180" height="51">
+                        <img src="{{ asset('img/terabyte.svg') }}" alt="Terabyte" width="180" height="51">
                     </a>
 
                     <form id="searchForm" action="/" method="GET" class="m-0">
@@ -156,14 +157,7 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
-        <div class="row bg-white">
-            @if (session('msg'))
-                <p class="msg">{{ session('msg') }}</p>
-            @endif
-            @yield('content')
-        </div>
-    </div>
+    @yield('content')
     <footer>
         <p>Feito por Polese ☕</p>
     </footer>

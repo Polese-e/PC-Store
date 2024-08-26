@@ -1,0 +1,10 @@
+#productFeatured {
+    max-width: 1440px;
+    height: 820px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+}

@@ -12,9 +12,11 @@
                         <div class="timer text-center">Termina em: <span id="timer" class="d-block"></span></div>
                     </div>
                 </div>
-                <div class="card-image d-flex align-items-center justify-content-center">
-                    <img src="/img/products/{{ $product->image }}" alt="{{ $product->title }}">
-                </div>
+                <a href="/products/{{ $product->id }}">
+                    <div class="card-image d-flex align-items-center justify-content-center">
+                        <img src="/img/products/{{ $product->image }}" alt="{{ $product->title }}">
+                    </div>
+                </a>
                 <div class="product-name">
                     <p>{{ $product->name }}</p>
                 </div>

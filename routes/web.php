@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 
 Route::get('/', [ProductController::class, 'index']);
+Route::get('/products/{id}', [ProductController::class, 'show']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
-Route::get('/events/{id}', [EventController::class, 'show']);
 Route::post('/events', [EventController::class, 'store']);
 Route::get('/dashboard', [EventController::class,'dashboard'])->middleware('auth');
 Route::delete('/events/{id}', [EventController::class,'destroy'])->middleware('auth');
