@@ -32,9 +32,10 @@
     <link rel="stylesheet" href="{{ asset('css/carousel-product-category.css') }}">
     <link rel="stylesheet" href="{{ asset('css/product.show/product-featured.css') }}">
     {{-- JS da aplicação --}}
-    <script src="{{ asset('js\app.js') }}" defer></script>
+    <script src="{{ asset('js\galery.js') }}" defer></script>
     <script src="{{ asset('js\scroll.js') }}" defer></script>
     <script src="{{ asset('js\timer.js') }}" defer></script>
+    <script src="{{ asset('js\label-category-highlights.js') }}" defer></script>
 </head>
 
 <body>
@@ -161,10 +162,10 @@
     <footer>
         <p>Feito por Polese ☕</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
 </body>
 
 </html>

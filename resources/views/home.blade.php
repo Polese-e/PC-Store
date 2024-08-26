@@ -50,3 +50,4 @@
         </div>
     </div>
 </div>
+<script src="{{ asset('js\glider.js') }}" defer></script>

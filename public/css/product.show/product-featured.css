@@ -8,3 +8,35 @@
     padding-left: 15px;
     border-radius: 6px;
 }
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.main-image img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 100px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnails img.active {
+    opacity: 1;
+}

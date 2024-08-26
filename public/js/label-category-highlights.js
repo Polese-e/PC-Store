@@ -1,12 +1,3 @@
-/* Glider Home */
-new Glider(document.querySelector('.glider'), {
-    slidesToShow: 9,
-    slidesToScroll: 6,
-    draggable: true,
-    dots: '.dots'
-});
-
-/* Label Category Highlights */
 const cards = document.querySelectorAll('#container-product-subcategory .cards .card h2');
 
 cards.forEach(card => {
