@@ -58,3 +58,15 @@
     padding-bottom: 20px;
     border-radius: 8px;
 }
+
+#productFeatured .promotion-area .banner-promotion-area {
+    width: 100%;
+}
+
+#productFeatured .promotion-area .banner-promotion-area img {
+    height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
