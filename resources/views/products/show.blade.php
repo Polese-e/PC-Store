@@ -16,22 +16,38 @@
                 <img src="{{ asset('img/products/' . $product->image) }}" alt="Imagem 1" class="active">
             </div>
         </div>
-        <div class="promotion-area">
+        <div class="product-info-area">
             <div class="banner-promotion-area">
                 <img src="{{ asset('/img/main-slider/slide1.jpg') }}" alt="" class="mt-2">
             </div>
             <div class="timer-promotion-area d-flex">
-                <div class="text">
+                <div class="text w-50 h-100 d-flex align-items-center justify-content-center">
                     <span>
                         MÊS DO GAMER
-                        <br>
-                        <div class="div">APROVEITE</div>
+                        <div class="text-center">
+                            APROVEITE!
+                        </div>
                     </span>
                 </div>
-                <div class="timer">
+                <div class="timer w-50 h-100 d-flex align-items-center justify-content-center">
                     <span id="timer" class="d-block"></span>
                 </div>
             </div>
+            <div class="number-promotion-area d-flex w-100">
+                <div class="discount h-100">
+                    <div>
+                        {{ $product->discount_percentage }}%
+                    </div>
+                    <span>Desconto Extra</span>
+                </div>
+                <div class="sold h-100">
+                    <div>3010</div>
+                    <span>Vendidos</span>
+                </div>
+            </div>
+            <h1 class="product-title w-100">
+                {{ $product->name }}
+            </h1>
         </div>
     </div>
 

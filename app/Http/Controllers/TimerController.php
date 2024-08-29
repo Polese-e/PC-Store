@@ -9,7 +9,7 @@ class TimerController extends Controller
 {
     public function getTime()
     {
-        $endTime = strtotime('2024-08-29 00:00:00');
+        $endTime = strtotime('2024-09-8 00:00:00');
         $currentTime = time();
         $timeLeft = $endTime - $currentTime;
 
