@@ -39,12 +39,13 @@
 }
 
 #productFeatured .gallery .main-image img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 550;
     display: block;
     transition: opacity 0.5s ease;
     padding: 20px;
     margin: 0 70px;
+    image-rendering: auto;
 }
 
 #productFeatured .product-info-area {
