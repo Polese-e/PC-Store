@@ -14,7 +14,7 @@
                 </div>
                 <a href="/products/{{ $product->id }}">
                     <div class="card-image d-flex align-items-center justify-content-center">
-                        <img src="/img/products/{{ $product->image }}" alt="{{ $product->title }}">
+                        <img src="/img/products/{{ $product->image }}" alt="{{ $product->name }}">
                     </div>
                 </a>
                 <div class="product-name">
@@ -22,16 +22,15 @@
                 </div>
                 <div class="product-price w-100">
                     <div class="old-price">
-                        <p><del>De: R$ 3.171,04</del> por:</p>
+                        <p><del>De: R$ {{ number_format($product->price, 2, ',', '.') }}</del> por:</p>
                     </div>
                     <div class="new-price d-flex align-items-center">
                         <p class="d-flex align-items-center">
-                            <span>R$ 1.299,90</span>
-                            à vista
+                            <span>R$ {{ number_format($product->discount_price, 2, ',', '.') }}</span> à vista
                         </p>
                     </div>
                     <div class="juros">
-                        <p>12x de R$ 127,44 sem juros</p>
+                        <p>12x de R$ {{ number_format($product->discount_price / 12, 2, ',', '.') }} sem juros</p>
                     </div>
                 </div>
                 <div class="add-to-cart text-center">
@@ -41,23 +40,22 @@
         @else
             <div class="card col-lg-1-5">
                 <div class="card-image no-discunt d-flex align-items-center justify-content-center">
-                    <img src="/img/products/{{ $product->image }}" alt="{{ $product->title }}">
+                    <img src="/img/products/{{ $product->image }}" alt="{{ $product->name }}">
                 </div>
                 <div class="product-name">
                     <p>{{ $product->name }}</p>
                 </div>
                 <div class="product-price w-100">
                     <div class="old-price">
-                        <p><del>De: R$ 3.171,04</del> por:</p>
+                        <p><del>De: R$ {{ number_format($product->price, 2, ',', '.') }}</del> por:</p>
                     </div>
                     <div class="new-price d-flex align-items-center">
                         <p class="d-flex align-items-center">
-                            <span>R$ 1.299,90</span>
-                            à vista
+                            <span>R$ {{ number_format($product->discount_price, 2, ',', '.') }}</span> à vista
                         </p>
                     </div>
                     <div class="juros">
-                        <p>12x de R$ 127,44 sem juros</p>
+                        <p>12x de R$ {{ number_format($product->discount_price / 12, 2, ',', '.') }} sem juros</p>
                     </div>
                 </div>
                 <div class="add-to-cart text-center">

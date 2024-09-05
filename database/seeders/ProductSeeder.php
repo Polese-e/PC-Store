@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
         Product::truncate();
 
         Product::insert([
-            ['name' => 'Monitor Gamer SuperFrame Precision, 27 Pol, Curvo, Quad HD, 124.4% sRGB, FreeSync/G-Sync, 1ms, 165Hz, HDMI/DP, SFV2701G', 'price'=> 0, 'have_discount' => 1, 'discount_price' => 0, 'discount_percentage' => 52, 'image' => 'f270ab0018af33155d9cf7f703533d67.webp'],
+            ['name' => 'Monitor Gamer SuperFrame Precision, 27 Pol, Curvo, Quad HD, 124.4% sRGB, FreeSync/G-Sync, 1ms, 165Hz, HDMI/DP, SFV2701G', 'price'=> 3171.04, 'have_discount' => 1, 'discount_price' => 1299.90, 'discount_percentage' => 52, 'image' => 'f270ab0018af33155d9cf7f703533d67.webp'],
         ]);
     }
 }

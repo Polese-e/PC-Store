@@ -48,6 +48,20 @@
             <h1 class="product-title w-100">
                 {{ $product->name }}
             </h1>
+            <div class="product-price w-100">
+                <div class="price d-flex">
+                    <i class="fa fa-barcode pull-left text-white"></i>
+                    <div class="price-in-sight">
+                        <p>
+                            De:
+                            <del>R$ {{ number_format($product->price, 2, ',', '.') }}</del>
+                            por:
+                        </p>
+                        <h2>R$ {{ number_format($product->discount_price, 2, ',', '.') }}</h2>
+                        <span>à vista com {{ $product->discount_ }}% de desconto no boleto ou pix</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
