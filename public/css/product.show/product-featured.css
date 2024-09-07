@@ -175,14 +175,14 @@
     margin-left: 5px;
 }
 
-#productFeatured .product-info-area .product-price .price .price-in-sight p{
+#productFeatured .product-info-area .product-price .price .price-in-sight p {
     color: white;
     font-size: 14px;
     margin: 0px;
     margin-top: 2px;
 }
 
-#productFeatured .product-info-area .product-price .price .price-in-sight h2{
+#productFeatured .product-info-area .product-price .price .price-in-sight h2 {
     color: rgb(178, 255, 67);
     font-size: 30px;
     letter-spacing: -2px;
@@ -190,7 +190,7 @@
     margin: 0px;
 }
 
-#productFeatured .product-info-area .product-price .price .price-in-sight span{
+#productFeatured .product-info-area .product-price .price .price-in-sight span {
     color: rgba(221, 218, 214, 0.93);
     font-size: 12px;
 }
