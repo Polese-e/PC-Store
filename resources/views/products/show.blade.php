@@ -6,7 +6,7 @@
 
 @section('content')
     <div id="productFeatured" class="container bg-white d-flex align-items-center">
-        <div class="gallery d-flex">
+        <div class="gallery d-flex align-items-center">
             <div class="thumbnails">
                 <img src="{{ asset('img/products/a32d029808e281f6abb79a08a9d6f012.jpg') }}" alt="Imagem 1"
                     class="thumbnail active">
@@ -62,6 +62,10 @@
                     </div>
                 </div>
             </div>
+            <button>
+                COMPRAR COM DESCONTO
+                <i class="fa fa-cart-arrow-down text-white"></i>
+            </button>
         </div>
     </div>
 
