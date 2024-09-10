@@ -16,7 +16,7 @@
                 <img src="{{ asset('img/products/' . $product->image) }}" alt="Imagem 1" class="active">
             </div>
         </div>
-        <div class="product-info-area">
+        <divna class="product-info-area">
             <div class="banner-promotion-area">
                 <img src="{{ asset('/img/main-slider/slide1.jpg') }}" alt="" class="mt-2">
             </div>
@@ -66,7 +66,7 @@
                 COMPRAR COM DESCONTO
                 <i class="fa fa-cart-arrow-down text-white"></i>
             </button>
-        </div>
+        </divna>
     </div>
 
 @endsection
