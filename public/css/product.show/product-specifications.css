@@ -1,0 +1,21 @@
+#productSpecifications {
+    max-width: 1440px;
+    height: 570px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+}
+
+#productSpecifications span {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+#productSpecifications span:hover {
+    color: rgb(232, 108, 50);
+}

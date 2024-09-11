@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{{ asset('css/product-subcategory.css') }}">
     <link rel="stylesheet" href="{{ asset('css/carousel-product-category.css') }}">
     <link rel="stylesheet" href="{{ asset('css/product.show/product-featured.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/product.show/product-specifications.css') }}">
     {{-- JS da aplicação --}}
     <script src="{{ asset('js\galery.js') }}" defer></script>
     <script src="{{ asset('js\scroll.js') }}" defer></script>

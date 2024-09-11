@@ -68,5 +68,7 @@
             </button>
         </divna>
     </div>
-
+    <div id="productSpecifications" class="container bg-white">
+        <span>ESPECIFICAÇÕES TÉCNICAS</span>
+    </div>
 @endsection
