@@ -68,15 +68,17 @@
             </button>
         </divna>
     </div>
-    <div id="productSpecifications" class="container bg-white">
-        <span>ESPECIFICAÇÕES TÉCNICAS</span>
-        <ul>
-            @foreach ($productDescriptions as $description)
-            <li>
-                <p><strong>{{ $description->title }}:</strong></p>
-                <p>{{ $description->content }}</p>
-            </li>
-            @endforeach
-        </ul>
-    </div>
+    @if (count($productDescriptions) > 0)
+        <div id="productSpecifications" class="container bg-white">
+            <span>ESPECIFICAÇÕES TÉCNICAS</span>
+            <ul>
+                @foreach ($productDescriptions as $description)
+                    <li>
+                        <p><strong>{{ $description->title }}:</strong></p>
+                        <p>{{ $description->content }}</p>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 @endsection
