@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use App\Models\Category;
 use App\Models\CategoryHighlight;
+use App\Models\ProdDescription;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -30,6 +31,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $banners = Banner::inRandomOrder()->take(random_int(1,4))->get();
-        return view("products.show", ["product"=> $product, "banners"=> $banners]);
+        $productDescriptions = ProdDescription::where("product_id", $id)->orderBy("order")->get();
+        return view("products.show", ["product"=> $product, "banners"=> $banners, "productDescriptions"=> $productDescriptions]);
     }
 }

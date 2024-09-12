@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             CategoryHighlightSeeder::class,
             ProductSeeder::class,
             TimerSeeder::class,
+            ProdDescriptionSeeder::class,
         ]);
     }
 }
