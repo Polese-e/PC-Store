@@ -17,4 +17,10 @@ class Product extends Model
         'discount_percentage',
         'image'
     ];
+
+    public function categories()
+    {
+        // This indicates that a Product can belong to many Categories
+        return $this->belongsToMany(Category::class, 'product_categories');
+    }
 }

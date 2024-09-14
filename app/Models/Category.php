@@ -13,4 +13,10 @@ class Category extends Model
         'title',
         'image',
     ];
+
+    public function products()
+    {
+        // This indicates that a Category can have many Products
+        return $this->belongsToMany(Product::class, 'product_categories');
+    }
 }
