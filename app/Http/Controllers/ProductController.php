@@ -13,19 +13,28 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(Request $request)
-    {
-        $search = $request->search;
-        $categories = Category::all();
-        $banners = Banner::inRandomOrder()->take(random_int(1,4))->get();
-        $categoryHighlights = CategoryHighlight::all();
+{
+    $search = $request->search;
+    $categories = Category::all();
+    $banners = Banner::inRandomOrder()->take(random_int(1,4))->get();
+    $categoryHighlights = CategoryHighlight::all();
 
-        if ($search) {
-            $products = Product::where("name","like","%".$search."%")->get();
-        } else {
-            $products = Product::all();
-        }
-        return view("home", ["search" => $search, "categories" => $categories, "products"=> $products, "banners"=> $banners, "categoryHighlights" => $categoryHighlights]);
+    if ($search) {
+        // Se houver uma busca, filtra os produtos pelo nome e usa paginação
+        $products = Product::where("name", "like", "%" . $search . "%")->paginate(20);
+    } else {
+        // Se não houver busca, simplesmente paginar todos os produtos
+        $products = Product::paginate(20);
     }
+
+    return view("home", [
+        "search" => $search,
+        "categories" => $categories,
+        "products" => $products,
+        "banners" => $banners,
+        "categoryHighlights" => $categoryHighlights
+    ]);
+}
 
     public function show($id)
 {

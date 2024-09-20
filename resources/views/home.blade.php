@@ -25,6 +25,9 @@
 <div class="home-products-container mx-auto">
     <h2 class="title-home-products-container mb-3">LANÇAMENTOS</h2>
     @include('partials.card')
+    <div class="pagination-container">
+        {{ $products->links() }}
+    </div>
 </div>
 
 <div class="carousel-products-category mx-auto">
