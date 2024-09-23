@@ -18,25 +18,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <link rel="icon" href="{{ asset('img/favicon-terabyte.webp') }}">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     {{-- Glider --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    {{-- CSS da aplicação --}}
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/navbar/top-navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/navbar/bottom-navbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/home-products-container.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/product-subcategory.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/carousel-product-category.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/product.show/product-featured.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/product.show/product-specifications.css') }}">
-    {{-- JS da aplicação --}}
-    <script src="{{ asset('js\galery.js') }}" defer></script>
-    <script src="{{ asset('js\scroll.js') }}" defer></script>
-    <script src="{{ asset('js\timer.js') }}" defer></script>
-    <script src="{{ asset('js\label-category-highlights.js') }}" defer></script>
+    {{-- CSS e JS da aplicação --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
@@ -47,7 +35,6 @@
                     <a href="/">
                         <img src="{{ asset('img/terabyte.svg') }}" alt="Terabyte" width="180" height="51">
                     </a>
-
                     <form id="searchForm" action="/" method="GET" class="m-0">
                         <input id="searchInput" type="text " name="search" placeholder="Pesquise o seu produto"
                             aria-label="Search">

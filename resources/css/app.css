@@ -1,7 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "./navbar/bottom-navbar.css";
+@import "./navbar/top-navbar.css";
+@import "./product.show/product-featured.css";
+@import "./product.show/product-specifications.css";
+@import "./carousel-product-category.css";
+@import "./home-products-container.css";
+@import "./product-subcategory.css";
+@import "./slider.css";
 
-[x-cloak] {
-    display: none;
+/* General */
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin-top: 115px;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #ebebeb;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #232223;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
 }
