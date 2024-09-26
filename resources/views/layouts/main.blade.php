@@ -26,7 +26,6 @@
     {{-- CSS e JS da aplicação --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
 <body>
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg p-0">
